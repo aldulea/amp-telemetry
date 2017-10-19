@@ -1,0 +1,20 @@
+html
+	head
+		title= 'Player Events List'
+		
+	body
+		h1= 'Player Events List'
+	table
+		thead
+		tr
+		th id
+		th stream id
+		th event type
+		th time
+		tbody
+		for ev in playerEvents
+			tr
+				td= ev.id
+				td= ev.streamId
+				td= ev.eventType
+				td= ev.time

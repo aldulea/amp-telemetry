@@ -1,0 +1,20 @@
+html
+	head
+		title= 'Player Statistics List'
+		
+	body
+		h1= 'Player Statistics List'
+	table
+		thead
+		tr
+		th id
+		th stream id
+		th time buffering
+		th average buffer
+		tbody
+		for ps in playerStatistics
+			tr
+				td= ps.id
+				td= ps.streamId
+				td= ps.timeBuffering
+				td= ps.averageBuffer

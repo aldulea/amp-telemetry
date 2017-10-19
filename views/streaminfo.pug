@@ -1,0 +1,25 @@
+html
+	head
+		title= 'Stream Info List'
+	body
+		h1= 'Stream Info List'
+	table
+		thead
+		tr
+		th id
+		th stream id
+		th protocol
+		th avail. Vid Bitrates
+		th avail. Aud Bitrates
+		th avail. Subs
+		th isLive
+		tbody
+		for stream in streamInfoList
+			tr
+				td= stream.id
+				td= stream.manifestUrl
+				td= stream.protocol
+				td= stream.availableVidBitrates
+				td= stream.availableAudBitrates
+				td= stream.availableSubs
+				td= stream.isLive

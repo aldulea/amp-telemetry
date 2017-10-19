@@ -1,0 +1,20 @@
+html
+	head
+		title= 'Player Errors List'
+		
+	body
+		h1= 'Player Errors List'
+	table
+		thead
+		tr
+		th id
+		th stream id
+		th errorCode
+		th time
+		tbody
+		for pe in playerErrors
+			tr
+				td= pe.id
+				td= pe.streamId
+				td= pe.errorCode
+				td= pe.time

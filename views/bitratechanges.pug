@@ -1,0 +1,20 @@
+html
+	head
+		title= 'Bitrate Changes List'
+		
+	body
+		h1= 'Bitrate Changes List'
+	table
+		thead
+		tr
+		th id
+		th stream id
+		th type
+		th time
+		tbody
+		for bc in bitrateChanges
+			tr
+				td= bc.id
+				td= bc.streamId
+				td= bc.type
+				td= bc.time

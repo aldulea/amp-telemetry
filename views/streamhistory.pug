@@ -1,0 +1,26 @@
+html
+	head
+		title= 'Stream History List'
+		
+	body
+		h1= 'Stream History List'
+	table
+		thead
+		tr
+		th id
+		th stream id
+		th bitrate
+		th bitrate type
+		th downloaded fragments
+		th failed fragments
+		th bytes downloaded
+		tbody
+		for stream in streamHistoryList
+			tr
+				td= stream.id
+				td= stream.streamId
+				td= stream.bitrate
+				td= stream.bitrateType
+				td= stream.downloadedFragments
+				td= stream.failedFragments
+				td= stream.bytesDownloaded
